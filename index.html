@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zain ul Abdin (116841)</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>")
+        function date() {
+            let now = new Date();
+            document.write("Q:1 </br>" + now + "</br>")
+        }
+        date()
+        function fullName() {
+            let name = prompt("Enter Your Frist Name:")
+            let lastName = prompt("Enter Your Last Name:")
+            document.write("Q:2 </br>" + name + " " + lastName + "</br>")
+
+        }
+        fullName()
+        function sum() {
+            let num1 = prompt("Enter Frist Number") * 1;
+            let num2 = prompt("Enter Second Number") * 1;
+            let calc = num1 + num2;
+            document.write("Q:3 </br>" + calc + "</br>");
+
+        }
+        sum();
+        function q4(a, b) {
+            let sum = a + b
+            document.write("Q:4 </br>", sum, "</br>");
+
+        }
+        q4(120, 140);
+
+        function q5(c, d) {
+            let res = c * d;
+            document.write("Q:5 </br>", res, "</br>");
+        }
+        q5(2 * 2, 2 * 2);
+
+        function factorial(number) {
+            var a = 1;
+            if (number === 1) {
+                document.write("Q:6 </br>" + "The Factorial number is : 1" + "</br>");
+
+            } else if (number < 0) {
+                document.write("Q:6 </br>" + "This is not a Factorial number" + "</br>");
+
+            } else {
+                for (i = 1; i <= number; i++) {
+                    a = a * i;
+                }
+                document.write("Q:6 </br>" + "Here is the factorial number of the number you entered :" + " " + a + "</br>");
+            }
+
+        }
+        factorial(prompt("Enter Whose factorial number you want to see:"))
+        document.write("Q:7</br>");
+        function count(start, end) {
+            for (i = start; i <= end; i++) {
+                document.write(i + "</br>");
+            }
+        }
+        count(prompt("Enter start Number:"), prompt("Enter End Number:"))
+        count()
+        function calc(height, width) {
+            var result = height * width;
+            document.write("Q:9</br>" + "Entered Height Is :" + height + "</br>" + "Entered width Is :" + width + "</br>" + "Total :" + ' ' + result + "</br></br>")
+        }
+        calc(prompt("Enter Height"), prompt("Enter Width"))
+        function palindrome() {
+            var str = prompt("Enter Any String to Check is palindrome or not:")
+            var len = str.length;
+            var msg = "This is A Palindrome word"
+            for (i = 0; i < len / 2; i++) {
+                if (str[i] != str[len - 1 - i]) {
+                    msg = "This is Not A Palindrome word"
+                    document.write("Q:10</br>" + str + " :" + msg + "</br></br>")
+                    break;
+                } else {
+                    document.write("Q:10</br>" + str + " :" + msg + "</br></br>")
+                    break;
+                }
+            }
+        }
+        palindrome()
+function capital (){
+    let sentence =prompt("Enter Any Sentence To Convert Each Capitalized:")
+    document.write("Q:11</br>" +"EXAMPLE STRING :"+ sentence+ "</br>"+ "EXPECTED OUTPUT :"+ " ")
+    let arr = sentence.split(" ");
+    for (i = 0 ; i < arr.length ; i++){
+        arr[i] = arr[i][0].toUpperCase()+arr[i].substring(1);
+        document.write(arr[i]+" ");
+    } 
+}
+capital()
+function longest (String){
+    var longestWord = 0;
+    var numbervalue ;
+    var arry = String.split(" ")
+    for(i = 0 ; i < arry.length ; i++){
+        if (arry[i].length > longestWord ){
+            longestWord = arry[i].length ;
+            numbervalue = arry[i] ;
+        }
+    }
+
+    document.write("Q:12</br>"+"EXAMPLE STRING :"+ String+ "</br>"+ "EXPECTED OUTPUT:"+ " " +numbervalue);
+}
+longest('Web Development Tutorial')
+function charCount (str , letter){
+ let letterCount = 0 ;
+ for (i= 0 ; i < str.length ; i++){
+    if(str.charAt(i) === letter){
+        letterCount += 1 ;
+    
+    }
+ }
+ document.write("</br>Q:13</br>"+"string is===>" + " "+ str + "</br>"+"letter==>"+ " " +letter+" </br>" +"letter Count in this string is: "+" "+ letterCount)
+}
+charCount('JSResourceS.comooo', 'o')
+
+
+
+
+document.write("/<h1>")
+    </script>
+</body>
+
+</html>
