@@ -69,6 +69,19 @@
         }
         count(prompt("Enter start Number:"), prompt("Enter End Number:"))
         count()
+        function findhypotenuse() {
+            function calculateSquare(base, perpendicular) {
+                let bSquare = base ** 2;
+                let pSquare = perpendicular ** 2;
+                let sum = bSquare + pSquare;
+                let hypotenuse = Math.sqrt(sum);
+                document.write("</br>Q:8</br>" + "Entered Base IS:" + base + "</br>" + "Entered perpendicular IS:" + perpendicular + "</br>"
+                    + "Hypotenuse Is:" + " " + hypotenuse + "</br>")
+
+            }
+            calculateSquare(prompt("Enter Base value:"), prompt("Enter Perpendicular value:"))
+        }
+        findhypotenuse();
         function calc(height, width) {
             var result = height * width;
             document.write("Q:9</br>" + "Entered Height Is :" + height + "</br>" + "Entered width Is :" + width + "</br>" + "Total :" + ' ' + result + "</br></br>")
@@ -90,46 +103,73 @@
             }
         }
         palindrome()
-function capital (){
-    let sentence =prompt("Enter Any Sentence To Convert Each Capitalized:")
-    document.write("Q:11</br>" +"EXAMPLE STRING :"+ sentence+ "</br>"+ "EXPECTED OUTPUT :"+ " ")
-    let arr = sentence.split(" ");
-    for (i = 0 ; i < arr.length ; i++){
-        arr[i] = arr[i][0].toUpperCase()+arr[i].substring(1);
-        document.write(arr[i]+" ");
-    } 
-}
-capital()
-function longest (String){
-    var longestWord = 0;
-    var numbervalue ;
-    var arry = String.split(" ")
-    for(i = 0 ; i < arry.length ; i++){
-        if (arry[i].length > longestWord ){
-            longestWord = arry[i].length ;
-            numbervalue = arry[i] ;
+        function capital() {
+            let sentence = prompt("Enter Any Sentence To Convert Each Capitalized:")
+            document.write("Q:11</br>" + "EXAMPLE STRING :" + sentence + "</br>" + "EXPECTED OUTPUT :" + " ")
+            let arr = sentence.split(" ");
+            for (i = 0; i < arr.length; i++) {
+                arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1);
+                document.write(arr[i] + " ");
+            }
         }
-    }
+        capital()
+        function longest(String) {
+            var longestWord = 0;
+            var numbervalue;
+            var arry = String.split(" ")
+            for (i = 0; i < arry.length; i++) {
+                if (arry[i].length > longestWord) {
+                    longestWord = arry[i].length;
+                    numbervalue = arry[i];
+                }
+            }
 
-    document.write("Q:12</br>"+"EXAMPLE STRING :"+ String+ "</br>"+ "EXPECTED OUTPUT:"+ " " +numbervalue);
-}
-longest('Web Development Tutorial')
-function charCount (str , letter){
- let letterCount = 0 ;
- for (i= 0 ; i < str.length ; i++){
-    if(str.charAt(i) === letter){
-        letterCount += 1 ;
-    
-    }
- }
- document.write("</br>Q:13</br>"+"string is===>" + " "+ str + "</br>"+"letter==>"+ " " +letter+" </br>" +"letter Count in this string is: "+" "+ letterCount)
-}
-charCount('JSResourceS.comooo', 'o')
+            document.write("</br>Q:12</br>" + "EXAMPLE STRING :" + String + "</br>" + "EXPECTED OUTPUT:" + " " + numbervalue);
+        }
+        longest('Web Development Tutorial')
+        function charCount(str, letter) {
+            let letterCount = 0;
+            for (i = 0; i < str.length; i++) {
+                if (str.charAt(i) === letter) {
+                    letterCount += 1;
+
+                }
+            }
+            document.write("</br>Q:13</br>" + "string is===>" + " " + str + "</br>" + "letter==>" + " " + letter + " </br>" + "letter Count in this string is: " + " " + letterCount)
+        }
+        charCount('JSResourceS.comooo', 'o')
+        function calcCircumfrence(radius) {
+            var y = (Math.PI * radius) * 2;
+            document.write("</br>Q:14:part=1</br>" + "The circumfrence is " + y + ".");
+        }
+        function calcArea(radius) {
+            var x = (Math.PI * radius) * radius;
+            document.write("</br>Q:14:part=2</br>" + "The area is " + x + ".");
+        }
+
+        calcCircumfrence(prompt("Enter The radius for calculate Cirumfrence"));
+        calcArea(prompt("Enter The radius for calculate Area"));
+
+
+        const base = 8;
+        const perpendicular = 6;
+        const findHypotenuse = (base, perpendicular) => {
+            const bSquare = base ** 2;
+            const pSquare = perpendicular ** 2;
+            const sum = bSquare + pSquare;
+            console.log(sum);
+            const hypotenuse = Math.sqrt(sum);
+            return hypotenuse;
+        };
+        console.log(findHypotenuse(base, perpendicular));
+        console.log(findHypotenuse(4, 3));
 
 
 
 
-document.write("/<h1>")
+
+
+        document.write("/<h1>")
     </script>
 </body>
 
